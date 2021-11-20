@@ -14,7 +14,8 @@
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
     "predeploy": "npm-run-all build:css",
     "deploy": "gh-pages -d docs",
-    "build": "parcel build index.html --dist-dir ./dist --public-url ./"
+    "build:parcel": "parcel build index.html --dist-dir ./dist --public-url ./",
+    "build": "npm-run-all build:css build:parcel"
   },
   "author": "Maria'lena Pietri",
   "license": "ISC",
