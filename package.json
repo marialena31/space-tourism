@@ -1,0 +1,32 @@
+{
+  "name": "space-tourism-website-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Space tourism website coding challenge](./preview.jpg)",
+  "homepage": "https://marialena31.github.io/space-tourism",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "start:parcel": "parcel index.html",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "predeploy": "npm-run-all build:css",
+    "deploy": "gh-pages -d docs",
+    "build": "parcel build index.html --dist-dir ./dist --public-url ./"
+  },
+  "author": "Maria'lena Pietri",
+  "license": "ISC",
+  "devDependencies": {
+    "concat": "^1.0.3",
+    "node-sass": "^4.14.0",
+    "npm-run-all": "^4.1.1",
+    "parcel": "^2.0.1",
+    "postcss-cli": "^9.0.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "live-server": "^1.2.1"
+  }
+}

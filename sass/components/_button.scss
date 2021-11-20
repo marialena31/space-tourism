@@ -1,0 +1,33 @@
+.btn {
+    position: relative;
+    background-color: $color-secondary;
+    height: 274px;
+    width: 274px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        font-family: $font-primary;
+        font-size: $font-size-big;
+        line-height: $line-height-big;
+        letter-spacing: $letter-spacing-tiniest;
+        text-transform: uppercase;
+        color: $color-tertiary;
+    }
+
+    &:active {
+        &::after {
+            content: " ";
+            background-color: $color-secondary;
+            opacity: $opacity-very-strong;
+            height: 450px;
+            width: 450px;
+            border-radius: 50%;
+            position: absolute;
+            top: -88px;
+            left: -88px;
+        }
+    }
+}

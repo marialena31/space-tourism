@@ -1,0 +1,125 @@
+.destination__container {
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+    background-color: $color-tertiary;
+    background-position: center;
+    background-size: contain;
+    width: $width-desktop;
+    height: $height-desktop;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 64px min-content 1fr max-content 112px;
+    grid-template-columns: minmax(48px,230px) 445px 1fr 445px 1fr;
+}
+
+.destination {
+    &__illustration {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+        align-self: flex-end;
+        justify-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    &__subtitle {
+        position: absolute;
+        top: -116px;
+        left: -63.5px;
+        color: $color-secondary;
+        span {
+            margin-right: 28px;
+        }
+    }
+
+    &__img {
+        align-self: flex-end;
+        justify-self: flex-end;
+    }
+
+    &__card {
+        grid-row: 3 / 4;
+        grid-column: 4 / 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &__navbar__menu {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 159.5px;
+
+        &__item {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: end;
+            &::after {
+                visibility: hidden; 
+                content: " ";
+                background-color: $color-secondary;
+                height: 3px;
+                width: 100%;
+                margin-top: 12px;
+            }
+
+            &:hover {
+                &::after {
+                    visibility: visible;
+                    opacity: $opacity-middle;
+                }
+            }
+
+            &:active {
+                &::after {
+                    visibility: visible;
+                    opacity: $opacity-full;
+                }
+
+                &__link {
+                    color: $color-secondary;
+                }
+            }
+
+            &:active > &__link {
+                color: $color-secondary;
+            }
+
+            &__link {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &__title {
+        margin-top: 37px;;
+    }
+
+    &__line {
+        grid-column: 2 / 3;
+        background-color: #383B4B;
+        height: 1px;
+        width: 444px;
+        margin-top: 54px;
+        margin-bottom: 28px;
+    }
+
+    &__tab {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 17px 44px;
+
+        &__label {
+            color: $color-primary;
+        }
+
+        &__value {
+            margin-top: 12px;
+        }
+    }
+}

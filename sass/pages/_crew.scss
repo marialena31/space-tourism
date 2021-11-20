@@ -1,0 +1,74 @@
+.crew__container {
+    background-image: url('../assets/crew/background-crew-desktop.jpg');
+    background-color: $color-tertiary;
+    background-position: center;
+    background-size: contain;
+    width: $width-desktop;
+    height: $height-desktop;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 64px 146px 188px 52px 91px 243px 96px;
+    grid-template-columns: minmax(48px,165px) 444px 1fr max-content 1fr;
+}
+
+.crew {
+    &__card {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+        display: grid;
+        grid-template-columns: 444px;
+        grid-template-rows: 188px 52px 91px 228px 15px;
+        justify-content: flex-start;
+    }
+
+    &__subtitle {
+        grid-row: 1 / 2;
+        color: $color-secondary;
+        span {
+            margin-right: 28px;
+        }
+    }
+
+    &__slider {
+        grid-row: 2 / 6;
+        display: grid;
+        grid-template-columns: max-content;
+        grid-template-rows: 52px 91px 220px 15px;
+        justify-content: flex-start;
+    }
+
+    &__subtitle2 {
+        grid-row: 1 / 2;
+        color: $color-secondary;
+        span {
+            margin-right: 28px;
+        }
+    }
+
+
+    &__title {
+        grid-row: 2 / 3;
+        white-space: nowrap;
+        margin-top: 15px;
+        margin-bottom: 27px;
+    }
+
+    &__text {
+        grid-row: 3 / 4;
+        width: 444px
+    }
+
+    &__dots {
+        grid-row: 4 / 5;
+        align-self: flex-end;
+    }
+
+    &__img {
+        grid-row: 4 / 8;
+        grid-column: 4 / 5;
+        align-self: flex-end;
+        justify-self: flex-end;
+    }
+}

@@ -1,0 +1,64 @@
+// COLOR VARIABLES
+$color-primary: #D0D6F9;
+
+$color-secondary: #FFFFFF;
+
+$color-tertiary: #0B0D17;
+
+$color-grey-dark: #979797;
+$color-black: #000;
+
+$color-black-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+
+$border-white: 1px solid $color-secondary;
+$border-black: 1px solid $color-black;
+
+$opacity-middle: 0.5;
+$opacity-high: 0.25;
+$opacity-strong: 0.17;
+$opacity-very-strong: 0.1;
+$opacity-strongest: 0.04;
+$opacity-full: 1;
+
+$backdrop-filter-blur: blur(81.5485px);
+
+// FONT VARIABLES
+$font-primary: 'Bellefair', serif;
+$font-secondary: 'Barlow Condensed', sans-serif;
+$font-tertiary: 'Barlow', sans-serif;
+
+$font-size-enorme: 150px;
+$font-size-huge: 100px;
+$font-size-biggest: 56px;
+$font-size-big: 32px;
+$font-size-medium: 28px;
+$font-size-small: 18px;
+$font-size-smallest: 16px;
+$font-size-tiny: 14px;
+
+$line-height-enorme: 172px;
+$line-height-huge: 115px;
+$line-height-biggest: 64px;
+$line-height-big: 37px;
+$line-height-medium-high: 34px;
+$line-height-medium: 32px;
+$line-height-small: 28px;
+$line-height-smallest: 19px;
+$line-height-tiny: 17px;
+
+$letter-spacing-large: 4.75px;
+$letter-spacing-small: 2.7px;
+$letter-spacing-tiny: 2.35px;
+$letter-spacing-tiniest: 2px;
+
+$font-weight-medium: 400;
+$font-weight-bold: 700;
+
+// SIZE
+$width-desktop: 1440px;
+$height-desktop: 900px;
+
+// RESPONSIVE BREAKPOINT
+$bp-large: 90em; // 1440px
+$bp-medium: 48em; // 1440px
+$bp-small: 23.5em; // 375px

@@ -1,0 +1,29 @@
+.slider {
+    .dots {
+        display: flex;
+}
+  .dots__dot {
+    border: none;
+    background-color: $color-secondary;
+    opacity: $opacity-strong;
+    box-shadow: $color-black-shadow;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-right: 24px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  
+  .dots__dot:last-child {
+    margin: 0;
+  }
+  
+  .dots__dot:hover {
+    opacity: $opacity-middle;
+  }
+
+  .dots__dot:active {
+    opacity: $opacity-full;
+  }
+}

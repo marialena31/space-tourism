@@ -1,0 +1,87 @@
+.heading1 {
+    font-family: $font-primary;
+    font-size: $font-size-enorme;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-enorme;
+    text-transform: uppercase;
+}
+
+.heading2 {
+    font-family: $font-primary;
+    font-size: $font-size-huge;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-huge;
+    text-transform: uppercase;
+}
+
+.heading3 {
+    font-family: $font-primary;
+    font-size: $font-size-biggest;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-biggest;
+    text-transform: uppercase;
+}
+
+.heading4 {
+    font-family: $font-primary;
+    font-size: $font-size-big;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-big;
+    text-transform: uppercase;
+}
+
+.dark-light {
+    color: $color-secondary;
+    opacity: $opacity-middle;
+}
+
+.heading5 {
+    font-family: $font-secondary;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-medium-high;
+    letter-spacing: $letter-spacing-large;
+    text-transform: uppercase;
+    color: $color-primary;
+}
+
+.dark {
+    color: $color-secondary;
+    font-weight: $font-weight-bold;
+    opacity: $opacity-high;
+}
+
+.subheading1 {
+    font-family: $font-primary;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-medium;
+    text-transform: uppercase;
+}
+
+.subheading2 {
+    font-family: $font-secondary;
+    font-size: $font-size-tiny;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-tiny;
+    letter-spacing: $letter-spacing-tiny;
+    text-transform: uppercase;
+}
+
+.navtext {
+    font-family: $font-secondary;
+    font-size: $font-size-smallest;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-smallest;
+    letter-spacing: $letter-spacing-small;
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: $font-weight-bold;
+}
+
+.paragraph {
+    font-family: $font-tertiary;
+    color: $color-primary;
+}
