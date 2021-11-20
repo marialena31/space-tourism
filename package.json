@@ -6,7 +6,8 @@
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass",
+    "start:dev": "npm-run-all --parallel devserver watch:sass",
+    "start": "parcel index.html",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
@@ -14,7 +15,7 @@
     "predeploy": "npm-run-all build:css",
     "deploy": "gh-pages -d docs",
     "build:parcel": "parcel build index.html --dist-dir ./dist --public-url ./",
-    "build": "npm-run-all build:css"
+    "build": "npm-run-all build:css build:parcel"
   },
   "author": "Maria'lena Pietri",
   "license": "ISC",
