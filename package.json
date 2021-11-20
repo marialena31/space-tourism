@@ -6,6 +6,7 @@
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
+    "start": "parcel index.html",
     "start:dev": "npm-run-all --parallel devserver watch:sass",
     "start:parcel": "parcel index.html",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
