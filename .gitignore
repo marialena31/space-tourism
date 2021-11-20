@@ -19,5 +19,6 @@ space-tourism-website-figma/
 space-tourism-website-sketch/
 starter-code/
 .parcel-cache/
-dist/
+dist/*
+!dist/assets/
 css/
