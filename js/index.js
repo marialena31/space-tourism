@@ -4,6 +4,7 @@ import { loadTechnologyPage, displayInfoTechnology } from './technology.js';
 import { loadHomePage } from './home.js';
 import { loadHeader } from './header.js';
 import randomNumber from './utils.js';
+import { getSessionItem, setSessionItem } from './session.js';
 
 let destinationsList = [];
 
@@ -20,7 +21,10 @@ const addEventListenerOnDestinationLink = () => {
       let menu_item = document.getElementById(`destination-item--${destinationsList[i].toLowerCase()}`);
           menu_item.addEventListener('click',  displayInfoDestination)
       }
-  });
+  })
+  .catch((error) => {
+    console.error(error);
+    });;
 }
 
 const addEventListenerOnCrewLink = () => {
@@ -49,7 +53,7 @@ const initPage = () => {
   addEventListenerOnHeaderLink();
 }
 
-const displayInfoDestinationFromExplore = () => {
+const displayInfoDestinationFromExplore = e => {
   initPage();
   const item = destinationsList[randomNumber(0,3)];
   loadDestinationPage(item);
@@ -61,7 +65,7 @@ const displayPage = (event) => {
 
   let targetLink = event?.target?.id?.substring(6);
   switch(targetLink) {
-    case "1" : 
+    case "1" :
     default:    loadHomePage();
                 addEventListenerOnHomeButton();
                 break;

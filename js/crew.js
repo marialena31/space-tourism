@@ -69,6 +69,7 @@ export const loadCrewPage = () => {
     
       bodyCrew.classList.remove(...bodyCrew.classList);
       bodyCrew.classList.add("crew__container");
+      bodyCrew.classList.add("load");
       bodyCrew.setAttribute("id", "crew");
       
       bodyCrew.appendChild(sectionCrewNode);

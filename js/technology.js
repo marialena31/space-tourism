@@ -39,19 +39,19 @@ export const loadTechnologyPage = () => {
         <h5 class="heading5 technology__subtitle"><span class="heading5 dark">03</span>Space launch 101</h5>
         <ul class="technology__navbar__menu">
         <li class="technology__navbar__menu__item" id="technology-item--1">
-            <a href="#" class="heading4 technology__navbar__menu__item__link">
+            <div class="heading4 technology__navbar__menu__item__link">
             1
-            </a>
+            </div>
         </li>
         <li class="technology__navbar__menu__item" id="technology-item--2">
-            <a href="#" class="heading4 technology__navbar__menu__item__link">
+            <div class="heading4 technology__navbar__menu__item__link">
             2
-            </a>
+            </div>
         </li>
         <li class="technology__navbar__menu__item" id="technology-item--3">
-            <a href="#" class="heading4 technology__navbar__menu__item__link">
+            <div class="heading4 technology__navbar__menu__item__link">
             3
-            </a>
+            </div>
         </li>
         </ul>
         <div class="slider technology__slider">
@@ -66,6 +66,7 @@ export const loadTechnologyPage = () => {
   
     bodyTechnology.classList.remove(...bodyTechnology.classList);
     bodyTechnology.classList.add("destination__container");
+    bodyTechnology.classList.add("load");
     bodyTechnology.setAttribute("id", "destination");
       
     bodyTechnology.appendChild(sectionTechnologyNode);

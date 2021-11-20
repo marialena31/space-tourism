@@ -1,10 +1,7 @@
 import { DATA } from './data.js';
+import { upFirstLetter } from './utils.js';
 
 const DATAtab = DATA;
-
-const upFirstLetter = (word) => {
-    return word.substring(0,1).toUpperCase() + word.substring(1).toLowerCase();
-}
 
 const simuFetch = (urlApi, params = '') => {
     const item = typeof(params) === 'string' ? upFirstLetter(params) : params;

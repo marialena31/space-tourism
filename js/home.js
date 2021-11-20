@@ -14,6 +14,7 @@ export const loadHomePage = () => {
     buttonHomeNode.innerHTML = `<span>Explore</span>`;
     
     bodyHome.classList.add("home__container");
+    bodyHome.classList.add("load");
     bodyHome.setAttribute("id", "home");
   
     bodyHome.appendChild(sectionHomeNode);

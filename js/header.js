@@ -9,24 +9,24 @@ export const loadHeader = () => {
             <div class="navbar__background">
               <ul class="navbar__menu">
                 <li class="navbar__menu__item">
-                  <a href="" class="navtext navbar__menu__item__link" id="link--1">
+                  <div class="navtext navbar__menu__item__link" id="link--1">
                     <span class="navtext bold">00</span>Home
-                  </a>
+                  </div>
                 </li>
                 <li class="navbar__menu__item">
-                  <a href="" class="navtext navbar__menu__item__link" id="link--2">
+                  <div class="navtext navbar__menu__item__link" id="link--2">
                     <span class="navtext bold">01</span>Destination
-                  </a>
+                  </div>
                 </li>
                 <li class="navbar__menu__item">
-                  <a href="" class="navtext navbar__menu__item__link" id="link--3">
+                  <div class="navtext navbar__menu__item__link" id="link--3">
                     <span class="navtext bold">02</span>Crew
-                  </a>
+                  </div>
                 </li>
                 <li class="navbar__menu__item">
-                  <a href="" class="navtext navbar__menu__item__link" id="link--4">
+                  <div class="navtext navbar__menu__item__link" id="link--4">
                     <span class="navtext bold">03</span>Technology
-                  </a>
+                  </div>
                 </li>
               </ul>
             </div>

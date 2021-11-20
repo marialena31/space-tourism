@@ -3,3 +3,7 @@ const randomNumber = (min, max) => {
 }
 
 export default randomNumber;
+
+export const upFirstLetter = (word) => {
+    return word.substring(0,1).toUpperCase() + word.substring(1).toLowerCase();
+}

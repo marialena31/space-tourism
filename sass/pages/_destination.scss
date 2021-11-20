@@ -68,6 +68,10 @@
                 margin-top: 12px;
             }
 
+            &__link {
+                cursor: pointer;
+            }
+
             &:hover {
                 &::after {
                     visibility: visible;

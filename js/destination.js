@@ -19,8 +19,7 @@ const loadTemplateDestination = (item) => {
     const DestinationImagePng = document.getElementById('destination-image-png');
     const DestinationImageWebp = document.getElementById('destination-image-webp');
 
-    simuFetch("getDestination(item)", item)
-    .then(info => {
+      simuFetch("getDestination(item)", item).then(info => {
       DestinationName.innerText = info.name;
       DestinationDescription.innerText = info.description;
       DestinationDistance.innerText = info.distance;
@@ -66,24 +65,24 @@ export const loadDestinationPage = (item = 'moon') => {
     sectionDestinationNode.innerHTML = `
     <ul class="destination__navbar__menu">
       <li class="destination__navbar__menu__item" id="destination-item--moon">
-        <a href="#" class="navtext destination__navbar__menu__item__link">
+        <div class="navtext destination__navbar__menu__item__link">
           Moon
-        </a>
+        </div>
       </li>
       <li class="destination__navbar__menu__item" id="destination-item--mars">
-        <a href="#"class="navtext destination__navbar__menu__item__link">
+        <div class="navtext destination__navbar__menu__item__link">
           Mars
-        </a>
+        </div>
       </li>
       <li class="destination__navbar__menu__item" id="destination-item--europa">
-        <a href="#"class="navtext destination__navbar__menu__item__link">
+        <div class="navtext destination__navbar__menu__item__link">
           Europa
-        </a>
+        </div>
       </li>
       <li class="destination__navbar__menu__item" id="destination-item--titan">
-        <a href="#"class="navtext destination__navbar__menu__item__link">
+        <div class="navtext destination__navbar__menu__item__link">
           Titan
-        </a>
+        </div>
       </li>
     </ul>
     <h2 class="heading2 destination__title" id="destination-name"></h2>
@@ -104,6 +103,7 @@ export const loadDestinationPage = (item = 'moon') => {
   
       bodyDestination.classList.remove(...bodyDestination.classList);
       bodyDestination.classList.add("destination__container");
+      bodyDestination.classList.add("load");
       bodyDestination.setAttribute("id", "destination");
       
       bodyDestination.appendChild(divNode);
